@@ -1,0 +1,153 @@
+*{
+    font-family: candara;
+}
+body{
+    margin:0;padding: 0;
+    background: #fff;
+    text-align: center;
+}
+main{
+    margin: 0;
+}
+.top{
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+    top: 0;
+}
+.header{
+    position: relative;
+}
+.header h1 a{
+    font-size: 30px;
+    text-decoration: none;
+    color:inherit;
+}
+.nav-title{
+    box-sizing: border-box;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+.nav-title h1{
+    width: 100%;
+}
+.nav-title span{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nav-title .mode{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px orange;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+.cover{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    top: 2px;
+    box-shadow:  -3px 0 rgb(222, 197, 149);
+    left: 10px;
+    transition: 0.5s;
+}
+#navs{
+    display: grid;
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    top: 0;
+    width: 0;
+    background: #ddd;
+    padding: 20px 0;
+    row-gap: 5px;
+    transition: 0.5s;
+    box-shadow: 0 0 5px black;
+}
+#navs span{
+    text-align: right;
+    padding: 0 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#navs a{
+    text-decoration: none;
+    color: #555;
+    cursor: pointer;
+    padding: 5px 0;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+}
+#navs a:hover{
+    color: #ddd;
+    background: grey;
+}
+.log-in-sign-up{
+    height: 450px;
+    display: flex;
+    width: 310px;
+    margin: 150px auto 50px;
+    position: relative;
+    overflow: hidden;
+    padding: 0 5px;
+}
+form{
+    box-shadow: 0 0 5px black;
+    position: absolute;
+    width: 250px;
+    margin:  10px auto 50px;
+    padding: 30px;
+    transition:  0.8s;
+    border-radius: 5px;
+    background:#fff ;
+}
+form div{
+    text-align: left;
+    margin-bottom:15px;
+}
+form input{
+    border-radius: 5px;
+    padding: 2px 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 2px black;
+}
+h4{
+    text-align: center;
+}
+#username,#password,#email{
+    width: 100%;
+}
+.remember,.terms{
+    font-size: 12px;
+}
+#remember,#terms{
+    accent-color: rebeccapurple;
+}
+h4 span{
+    color: rebeccapurple;
+}
+h4 span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#login{
+  left: 5px;
+}
+#signup{
+    left: 105%;
+}
